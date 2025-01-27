@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav Styles */
+nav {
+    display: flex;
+    background-color: #697565;
+    border: 2px solid black;
+    justify-content: space-between; 
+    font-family: "Oswald", serif;
+}
+
+nav p, nav a {}
+
+nav a {}
+
+nav a:hover {}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    background-color: #697565;
+    border: 2px solid black;
+    justify-content: 5px center;
+    font-family: "Oswald", serif;
+}
+
+footer a {}
+
+footer a:hover {}
+
+/* Splash Section */
+.splash {}
+
+.splash h1 {
+    font-family: "Roboto", "Oswald", serif;
+    color: darkolivegreen
+}
+
+.splash img {
+    border-radius: 100px;
+}
+
+.splash p {
+    font-family: "Times New Roman", serif;
+}
+
+/* Horizontal Rules */
+hr {
+    border-top: 2px solid black;
+}
+
+/* Sections */
+section {}
+
+/* Section Headings */
+section h2 {
+    font-family: "Roboto", "Oswald", serif;
+    color: #004225;
+}
+
+/* Paragraph Styles */
+section p {
+    font-family: "Times New Roman", serif;
+}
+
+/* link styles */
+section a {}
+section a:hover {}
+
+/* List Styles */
+ul {
+    font-family: "Times New Roman", serif;
+}
+
+dl {
+    font-family: "Times New Roman", serif;
+}
+dl dt{
+    font-family: "Times New Roman", serif;
+}
+dl dd{
+    font-family: "Times New Roman", serif;
+}
+
+/* Project Section */
+.three-col {   
+    /*border: 1px solid red;*/
+    display: grid;
+    /*grid-template-columns: repeat(3, minmax(300px, 1fr));  */    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));                 
+}
+
+.card {
+    padding: 2em;
+    border: 1px solid grey;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    border-radius: 5px;
+    background-color: #DAD7CD;
+    outline: auto;
+}
+
+.card img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    position: center;
+}
+
+.card h3 {
+    font-family: "Roboto", "Oswald", serif;
+    color: #004225;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact Page Styles */
+.one-col {
+    display: grid;
+    /*grid-template-columns: repeat(3, minmax(300px, 1fr));  */    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+form {}
+
+form input, form textarea {}
+
+form input:focus, form textarea:focus {}
+
+form button {}
+
+form button:hover {}
