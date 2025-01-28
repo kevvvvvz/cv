@@ -28,7 +28,7 @@ footer {
     display: flex;
     background-color: #697565;
     border: 2px solid black;
-    justify-content: 5px center;
+    justify-content: center;
     font-family: "Oswald", serif;
 }
 
