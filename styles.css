@@ -1,7 +1,9 @@
 /* General Styles */
 body {
+    display: flex;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
 }
 
 /* Nav Styles */
@@ -29,6 +31,9 @@ footer {
     background-color: #697565;
     border: 2px solid black;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
     font-family: "Oswald", serif;
 }
 
@@ -182,6 +187,10 @@ form input, form textarea {}
 
 form input:focus, form textarea:focus {}
 
-form button {}
+form button {
+    
+}
 
-form button:hover {}
+form button:hover {
+    background-color: #0c4a2f;
+}
