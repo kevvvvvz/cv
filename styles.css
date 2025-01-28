@@ -146,8 +146,11 @@ dl dd{
 }
 
 .card img {
-    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background: transparent;
+    position: center;
 }
 
 .card h3 {
