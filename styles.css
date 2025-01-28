@@ -15,9 +15,13 @@ nav {
 
 nav p, nav a {}
 
-nav a {}
+nav a {
+    text-decoration: none;
+}
 
-nav a:hover {}
+nav a:hover {
+    color: #ffffff;
+}
 
 /* Footer Styles */
 footer {
@@ -28,12 +32,22 @@ footer {
     font-family: "Oswald", serif;
 }
 
-footer a {}
+footer a {
+    text-decoration: none;
+}
 
-footer a:hover {}
+footer a:hover {
+    color: #ffffff;
+}
 
 /* Splash Section */
-.splash {}
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .splash h1 {
     font-family: "Roboto", "Oswald", serif;
@@ -41,7 +55,7 @@ footer a:hover {}
 }
 
 .splash img {
-    border-radius: 100px;
+    border-radius: 50%;
 }
 
 .splash p {
@@ -51,39 +65,56 @@ footer a:hover {}
 /* Horizontal Rules */
 hr {
     border-top: 2px solid black;
+    width: 85%;
 }
 
 /* Sections */
-section {}
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
 
 /* Section Headings */
 section h2 {
     font-family: "Roboto", "Oswald", serif;
     color: #004225;
+    text-align: center;
 }
 
 /* Paragraph Styles */
 section p {
     font-family: "Times New Roman", serif;
+    text-align: center;
 }
 
 /* link styles */
-section a {}
-section a:hover {}
+section a {
+    text-decoration: none;
+    margin: 0 10px; 
+}
+section a:hover {
+    color: #ffffff;
+}
 
 /* List Styles */
 ul {
     font-family: "Times New Roman", serif;
+    display: grid;
 }
 
 dl {
     font-family: "Times New Roman", serif;
+    display: grid;
 }
 dl dt{
     font-family: "Times New Roman", serif;
+    display: grid;
 }
 dl dd{
     font-family: "Times New Roman", serif;
+    display: grid;
 }
 
 /* Project Section */
@@ -91,18 +122,26 @@ dl dd{
     /*border: 1px solid red;*/
     display: grid;
     /*grid-template-columns: repeat(3, minmax(300px, 1fr));  */    
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));                 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+    gap: 20px;
+    padding: 20px;        
+    margin-bottom: 40px;                  
 }
 
 .card {
-    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+    padding: 15px;
     border: 1px solid grey;
     box-shadow: 0 1px 20px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 60%;
+    transition: 0.3s;    
     border-radius: 5px;
     background-color: #DAD7CD;
-    outline: auto;
+    margin: auto;
+    
 }
 
 .card img {
@@ -122,12 +161,22 @@ dl dd{
 
 /* Contact Page Styles */
 .one-col {
-    display: grid;
-    /*grid-template-columns: repeat(3, minmax(300px, 1fr));  */    
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;        
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
 }
 
-form {}
+form {
+    width: 600px;
+    max-width: 800px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;    
+}
 
 form input, form textarea {}
 
