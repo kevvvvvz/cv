@@ -1,9 +1,7 @@
 /* General Styles */
-body {
-    display: flex;
+body {    
     margin: 0;
-    padding: 0;
-    justify-content: space-between;
+    padding: 0;   
 }
 
 /* Nav Styles */
@@ -13,6 +11,7 @@ nav {
     border: 2px solid black;
     justify-content: space-between; 
     font-family: "Oswald", serif;
+    padding: 10px 20px;
 }
 
 nav p, nav a {}
@@ -30,10 +29,7 @@ footer {
     display: flex;
     background-color: #697565;
     border: 2px solid black;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
+    justify-content: center;    
     font-family: "Oswald", serif;
 }
 
@@ -138,7 +134,7 @@ dl dd{
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    height: 100%;
+    height: 120%;
     padding: 15px;
     border: 1px solid grey;
     box-shadow: 0 1px 20px 0 rgba(0,0,0,0.2);
@@ -150,11 +146,8 @@ dl dd{
 }
 
 .card img {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
     background: transparent;
-    position: center;
 }
 
 .card h3 {
