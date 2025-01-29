@@ -253,3 +253,21 @@ form button:hover {
 form button:hover {
     background-color: #0c4a2f;
 }
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #DAD7CD;
+    color: #004225;    
+    font-weight: bold;  
+}
+
+.thank-you a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;   
+}
