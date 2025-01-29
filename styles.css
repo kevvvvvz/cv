@@ -1,7 +1,7 @@
 /* General Styles */
 body {    
     margin: 0;
-    padding: 0;   
+    padding: 0;       
 }
 
 /* Nav Styles */
@@ -12,6 +12,7 @@ nav {
     justify-content: space-between; 
     font-family: "Oswald", serif;
     padding: 10px 20px;
+    font-weight: bold;
 }
 
 nav p, nav a {}
@@ -31,6 +32,8 @@ footer {
     border: 2px solid black;
     justify-content: center;    
     font-family: "Oswald", serif;
+    font-weight: bold;
+    padding: 10px;
 }
 
 footer a {
@@ -48,11 +51,16 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color:#DAD7CD;
+    width: 100vw;
+    max-width: 100%;
+    padding: 50px 0;
 }
 
 .splash h1 {
-    font-family: "Roboto", "Oswald", serif;
-    color: darkolivegreen;
+    font-family: "Merriweather", "Roboto", "Oswald", serif;
+    color: #697565;
+    font-weight: bold;
 }
 
 .splash img {
@@ -66,8 +74,12 @@ footer a:hover {
 /* Horizontal Rules */
 hr {
     border-top: 2px solid black;
-    width: 85%;
+    width: 90%;  
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    margin: 20px auto;
 }
+
+
 
 /* Sections */
 section {
@@ -79,7 +91,7 @@ section {
 
 /* Section Headings */
 section h2 {
-    font-family: "Roboto", "Oswald", serif;
+    font-family: "Merriweather", "Roboto", "Oswald", serif;
     color: #004225;
     text-align: center;
 }
@@ -103,11 +115,14 @@ section a:hover {
 ul {
     font-family: "Times New Roman", serif;
     display: grid;
+    list-style: none;
+    row-gap: 5px;
 }
 
 dl {
     font-family: "Times New Roman", serif;
     display: grid;
+    row-gap: 5px;
 }
 dl dt{
     font-family: "Times New Roman", serif;
@@ -160,16 +175,37 @@ dl dd{
     justify-content: center;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
 /* Contact Page Styles */
 .one-col {
-    display: grid;        
-    grid-template-columns: 1fr;
+    display: flex;      
     justify-content: center;
-    margin: 20px;
-    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    width: 650px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background-color: #DAD7CD;
+    margin-top: 0; 
 }
 
 form {
+    display: flex;    
+    flex-direction: column;
     width: 600px;
     max-width: 800px;
     padding: 20px;
@@ -177,16 +213,43 @@ form {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     background-color: #f9f9f9;    
+    justify-content: center;    
 }
 
-form input, form textarea {}
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
-form input:focus, form textarea:focus {}
+form input:focus, form textarea:focus {
+    outline: 2px solid #004225;
+    border-color: #004225;
+}
 
 form button {
-    
+    background-color: #004225;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
+form button:hover {
+    background-color: #0c4a2f;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 form button:hover {
     background-color: #0c4a2f;
 }
